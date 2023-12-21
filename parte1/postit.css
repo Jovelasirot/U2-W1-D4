@@ -118,3 +118,59 @@ main {
     opacity: 1;
   }
 }
+
+.one {
+  animation: fadeIn 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  opacity: 0;
+}
+
+.two {
+  animation: fadeIn2 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+.three {
+  animation: fadeIn2 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 4s;
+  opacity: 0;
+}
+
+.four {
+  animation: fadeIn2 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 6s;
+  opacity: 0;
+}
+
+.five {
+  animation: fadeIn2 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 8s;
+  opacity: 0;
+}
+
+.six {
+  animation: fadeIn2 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 10s;
+  opacity: 0;
+}
+
+.seven {
+  animation: fadeIn2 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 12s;
+  opacity: 0;
+}
+
+.eight {
+  animation: fadeIn2 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 14s;
+  opacity: 0;
+}
