@@ -1,0 +1,81 @@
+/*
+1 creazione del testo e formattazione di 1 parola da far ruotare
+2 inserimento delle altre 2 parole
+3 sovrapporre le 3 parole
+4 mostrare 1 parola e nascondere le altre 2
+5 animare 1 parola (fadein - fadeout con spostamento)
+6 animare le altre 2 parole
+7 ritardare progressivamente l'animazione delle altre 2 parole 
+*/
+
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+
+body {
+  font-family: "Satoshi", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(./OC\ 06.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#testoAlternato {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  height: auto;
+  width: 1000px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 30px 20px;
+  font-size: 2rem;
+  color: #fff;
+  line-height: 50px;
+}
+
+@keyframes tapparella {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
+.parole i {
+  display: inline-block;
+  position: absolute;
+  left: 400px;
+  overflow: hidden;
+  color: #064c7a;
+  opacity: 0;
+  animation: tapparella ease-in-out 12s infinite;
+}
+
+.parole i:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.parole i:nth-child(2) {
+  animation-delay: 4.1s;
+}
+
+.parole i:nth-child(3) {
+  animation-delay: 8.1s;
+}
